@@ -9,6 +9,11 @@ const packageDirs = readdirSync(packagesDir, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => join(packagesDir, entry.name));
 
+if (process.env.CI !== "true") {
+  console.error("npm publishing is handled by GitHub Actions trusted publishing (OIDC). Run a tagged release instead.");
+  process.exit(1);
+}
+
 for (const dir of packageDirs) {
   const pkgPath = join(dir, "package.json");
   const pkg = JSON.parse(readFileSync(pkgPath, "utf8"));
@@ -17,11 +22,7 @@ for (const dir of packageDirs) {
     continue;
   }
   console.log(`publishing ${pkg.name}...`);
-  const args = ["publish", "--access", "public"];
-  if (process.env.NPM_PUBLISH_PROVENANCE === "1" || process.env.CI === "true") {
-    args.push("--provenance");
-  }
-  const res = spawnSync("npm", args, {
+  const res = spawnSync("npm", ["publish", "--access", "public", "--provenance"], {
     cwd: dir,
     stdio: "inherit"
   });
