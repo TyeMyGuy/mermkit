@@ -13,6 +13,10 @@ if (process.env.CI !== "true") {
   console.error("npm publishing is handled by GitHub Actions trusted publishing (OIDC). Run a tagged release instead.");
   process.exit(1);
 }
+if (process.env.NPM_TOKEN || process.env.NODE_AUTH_TOKEN) {
+  console.error("Refusing to publish: npm auth token detected in CI. Remove NPM_TOKEN/NODE_AUTH_TOKEN to use OIDC.");
+  process.exit(1);
+}
 
 for (const dir of packageDirs) {
   const pkgPath = join(dir, "package.json");
