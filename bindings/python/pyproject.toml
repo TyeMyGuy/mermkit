@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mermkit"
+version = "0.0.0"
+description = "Python bindings for mermkit (Mermaid rendering toolkit)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+  { name = "mermkit contributors" }
+]
+keywords = ["mermaid", "diagram", "render", "cli"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13"
+]
+
+[project.urls]
+Homepage = "https://github.com/mermkit/mermkit"
+Repository = "https://github.com/mermkit/mermkit"
+Documentation = "https://github.com/mermkit/mermkit/tree/main/docs"
+Issues = "https://github.com/mermkit/mermkit/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mermkit"]
+
+[tool.hatch.build.targets.sdist]
+include = ["README.md", "mermkit"]

@@ -1,0 +1,29 @@
+{
+  "name": "mermkit",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "npm@10.9.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "node ./scripts/clean.mjs",
+    "lint": "eslint .",
+    "test": "npm run build && node tests/run.mjs",
+    "version:sync": "node scripts/sync-version.mjs",
+    "release:prepare": "node scripts/release-prepare.mjs",
+    "publish:npm": "node scripts/publish-npm.mjs",
+    "publish:pypi": "node scripts/publish-pypi.mjs",
+    "publish:crates": "node scripts/publish-crates.mjs",
+    "publish:all": "npm run publish:npm && npm run publish:pypi && npm run publish:crates"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^20.14.12",
+    "eslint": "^8.57.0",
+    "typescript": "^5.5.4"
+  }
+}

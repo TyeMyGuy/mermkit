@@ -1,0 +1,16 @@
+[package]
+name = "mermkit"
+version = "0.0.0"
+edition = "2021"
+description = "Rust bindings for mermkit (Mermaid rendering toolkit)"
+license = "MIT"
+repository = "https://github.com/mermkit/mermkit"
+homepage = "https://github.com/mermkit/mermkit"
+readme = "README.md"
+keywords = ["mermaid", "diagram", "render", "cli"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+base64 = "0.22"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

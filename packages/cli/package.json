@@ -1,0 +1,22 @@
+{
+  "name": "@mermkit/cli",
+  "version": "0.0.0",
+  "type": "module",
+  "bin": {
+    "mermkit": "dist/cli.js",
+    "mmk": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "types": "dist/cli.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@mermkit/core": "0.0.0",
+    "@mermkit/render": "0.0.0",
+    "@mermkit/adapters": "0.0.0"
+  }
+}
